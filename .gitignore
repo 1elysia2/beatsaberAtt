@@ -1,0 +1,12 @@
+# 忽略所有文件和文件夹
+*
+!/.gitignore
+
+# 逐级取消忽略目标路径
+!/attention/
+/attention/*
+!/attention/attention2/
+/attention/attention2/*
+!/attention/attention2/Assets/
+/attention/attention2/Assets/*
+!/attention/attention2/Assets/Scripts/
