@@ -1,12 +1,23 @@
-# 忽略根目录下所有（包括隐藏文件）
+# 忽略根目录下所有内容（包括隐藏文件）
 /*
-# 但保留 .gitignore 自身（可选）
+# 但保留 .gitignore 自身（如果需要提交它）
 !/.gitignore
 
-# 逐级保留 attention2/Assets/Scripts 路径
+# 逐级放行 attention2 目录
 !/attention2/
 /attention2/*
+
+# 放行 attention2/Assets 目录
 !/attention2/Assets/
 /attention2/Assets/*
+
+# 放行第一个目标目录：attention2/Assets/Scripts
 !/attention2/Assets/Scripts/
+
+# 放行第二个目标目录：attention2/Assets/Plugins/AIChatTookit/Scripts
+# 逐级放行 Plugins -> AIChatTookit -> Scripts
+!/attention2/Assets/Plugins/
+/attention2/Assets/Plugins/*
+!/attention2/Assets/Plugins/AIChatTookit/
+/attention2/Assets/Plugins/AIChatTookit/*
 !/attention2/Assets/Plugins/AIChatTookit/Scripts/
